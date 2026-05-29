@@ -32,3 +32,7 @@ for key in marks.keys():
 for key, value in marks.items():
     print(key, ":", value)
 
+
+print(marks.get("Alice"))  # Output: 85
+print(marks.get("Eve"))  # Output: None
+print(marks["Eve"])  # This will raise a KeyError since "Eve" is not a key in the dictionary
